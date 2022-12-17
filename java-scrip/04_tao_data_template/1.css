@@ -1,0 +1,20 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+img {
+     width: 100px;
+     height: 100px;
+}
+.kcm {
+     height: 150px;
+}
+.kcm b {
+     font-size: 12px;
+     color: #365899;
+
+}
+
+.kcm span {
+     font-size: 12px;
+     margin-left: 5px;
+}
+
