@@ -1,0 +1,56 @@
+*{margin: 0; padding: 0;} 
+.menu_ropdown.thanhxanh {
+     height: 30px;
+     background-color:#3b5998;
+ }
+
+ .motphantu {
+     position: relative;
+     float: right;
+     margin-right: 200px;
+     margin-top: 7px;
+     transition: 0.4s;
+ }
+
+ .danhsach {
+     position: absolute;
+     top: 23px;
+     right: 0;
+     width: 200px;
+     opacity: 0;
+     visibility: hidden;
+
+ }
+
+ .danhsach2 {
+    visibility: visible;
+    opacity: 1;
+ }
+
+ .danhsach::after {
+     content: "";
+     position: absolute;
+     top: -14px;
+     width: 0;
+     height: 0;
+     border: 7px rgba(118, 105, 34, 0) solid;
+     border-bottom-color: white ;
+     right: 0px;
+
+ }
+
+.tamgiac {
+     color: black;
+     transition: 9px;
+     font-size: 19px;
+     cursor: pointer;
+     transition: 0.4s;
+     margin-top: -6px;
+ }
+ .tamgiacWhite {
+     color: white;
+ }
+
+ .danhsach li:hover {
+    background-color: #3b5998;
+ }
