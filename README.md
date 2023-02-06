@@ -1,16 +1,18 @@
-# 
-##1: setting edior and plugin javascripy snippet
+# LEARNING JAVASCRIPT
+
+## Setting edior and plugin javascripy snippet
+
 Extensions button -> choise Plugin
 
-##2: Expressions and operators
+## Expressions and operators
 
 -   [Assignment operators]
 -   [Comparison operators]
 -   [Relational operators]
 
-## # JavaScript  Variables
+## JavaScript  Variables
 
-### 4 Ways to Declare a JavaScript Variable:
+#### 4 Ways to Declare a JavaScript Variable:
 
 -   Using  `var`
 -   Using  `let`
