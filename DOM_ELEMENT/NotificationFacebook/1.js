@@ -1,14 +1,28 @@
 ﻿document.addEventListener('DOMContentLoaded', function(){
-     //khai bao bien can su dung trong app nay 
-     var tamgiac = document.getElementsByClassName('tamgiac');
-     var tamgiac = tamgiac[0];
-     var danhsach = document.getElementsByClassName('danhsach');
-     // su dung ham onclick va toggle class cho tal gia doi mau 
+     //bien su dung de.click
+     let nut = document.getElementsByClassName('declick');
+     let contentShow = document.getElementsByClassName('dehienthi');
+     
+     for (let i = 0; i < nut.length; i++) {
+          nut[i].onclick = function (){
+               for (let k = 0; k < nut.length; k++) {
+                    nut[k].classList.remove('mautrang');  
+               }
+               
+               this.classList.toggle('mautrang');
 
-     tamgiac.onclick = function(){
-          this.classList.toggle('tamgiacWhite');        
-          danhsach[0].classList.toggle('danhsach2');
-     };
+               // show menju dropdown
+               let ndhienra = this.getAttribute('data-hienlen');
+               let elementShow = document.getElementById(ndhienra);
+               for (let l = 0; l < contentShow.length; l++) {
+                    contentShow[l].classList.remove('ra');
+                    
+               }
+               elementShow.classList.toggle('ra');
+
+                              
+          }
+     }
 }, false);
 
 
