@@ -1,0 +1,84 @@
+*{margin: 0; padding: 0;}
+
+.den {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.42);
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: 0.4s;
+    opacity:0;
+    visibility: hidden;
+
+}
+.len {
+    opacity:1;
+    visibility: visible;
+}
+
+.nut {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /* margin-top: 40%; */
+}
+
+.menutrai {
+    height: 100%;
+    background: #5cb85c;
+    width: 300px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    transition: 0.4s;
+}
+.menutrai.vetrai {
+    transform:translateX(-100%);
+}
+
+h3.display-3.text-xs-center {
+    font-size: 35px;
+    padding: 20px;
+    color: white;
+}
+
+li.list-group-item {
+    background: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.noidungto {
+    height: 100%;
+    transition: cubic-bezier(.38,-0.15,.92,.09) 0.5s;
+    /* padding-top: 10%; */
+    box-sizing: border-box;
+    perspective: 2200px;
+}
+
+html,body {
+    height: 100%;
+    overflow-x: hidden;  /*ko co thanh cuon ngang */
+    background: gray;
+} 
+
+.dichphai {
+    transform:translateX(300px);
+}
+
+.mautrang {
+    width: 100%;
+    height:100%;
+    background: white;
+    transition: 0.4s;
+    transform-origin: 100% 0%;
+   
+    }
+.trangquay {
+     transform: rotateY(-15deg);
+}
