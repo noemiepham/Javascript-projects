@@ -20,9 +20,7 @@ To do so, you have to find the elements first. There are several ways to do this
 -   Finding HTML elements by HTML object collections
 
 
-## Events
-
-####  Here is a list of some common HTML events:
+## HTML events:
 |                |Event                       |Description                   |
 |----------------|-------------------------------|-----------------------------|
 |1|`onchange`           |An HTML element has been changed        |
@@ -32,12 +30,11 @@ To do so, you have to find the elements first. There are several ways to do this
 |5     |`onkeydown`|  The user pushes a keyboard key|
 |6 |`onload`|The browser has finished loading the page |
 
+## Window
 
 1. window.addEventListener(): method of the EventTarget interface sets up a function that will be called whenever the specified event is delivered to the target.
-2. Window pageYOffset
+2. Window page_Offset
  - The  `pageYOffset`  property returns the pixels a document has   
    scrolled from the upper left corner of the windows; 
  - The  `pageYOffset`  property is equal to the  `scrollY`  property.
  - The  `pageYOffset`  property is read-only.
-
-## DOM Animation
