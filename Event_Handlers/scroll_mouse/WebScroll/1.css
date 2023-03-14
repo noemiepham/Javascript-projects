@@ -1,0 +1,29 @@
+*{margin: 0; padding: 0;}
+
+.menu {
+    height: 50px;
+    line-height: 50px;
+    background: #ad1c22;
+    transition: 0.4s;
+}
+.menuBlack {
+     background-color: black;
+     position: fixed;
+     z-index: 2;
+     top: 0;
+     left: 0;
+     width: 100%;
+}
+
+a {
+    color:  white;
+    padding: 0 30px;
+ 
+ 
+}
+
+ .banner {
+     height: 100px;
+     background: url(143.jpg) no-repeat center;
+     background-size: cover;
+ }
