@@ -33,5 +33,11 @@ To do so, you have to find the elements first. There are several ways to do this
 |6 |`onload`|The browser has finished loading the page |
 
 
+1. window.addEventListener(): method of the EventTarget interface sets up a function that will be called whenever the specified event is delivered to the target.
+2. Window pageYOffset
+ - The  `pageYOffset`  property returns the pixels a document has   
+   scrolled from the upper left corner of the windows; 
+ - The  `pageYOffset`  property is equal to the  `scrollY`  property.
+ - The  `pageYOffset`  property is read-only.
 
 ## DOM Animation
