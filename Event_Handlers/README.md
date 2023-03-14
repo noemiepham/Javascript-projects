@@ -38,3 +38,4 @@ To do so, you have to find the elements first. There are several ways to do this
    scrolled from the upper left corner of the windows; 
  - The  `pageYOffset`  property is equal to the  `scrollY`  property.
  - The  `pageYOffset`  property is read-only.
+ - The  `nameObject.offsetTop` position of Element ou object in windown,
