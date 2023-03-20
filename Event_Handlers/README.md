@@ -39,3 +39,13 @@ To do so, you have to find the elements first. There are several ways to do this
  - The  `pageYOffset`  property is equal to the  `scrollY`  property.
  - The  `pageYOffset`  property is read-only.
  - The  `nameObject.offsetTop` position of Element ou object in windown,
+
+ ## HTML DOM Elements
+ |         Property /Method                      |Description                   |
+|----------------|-------------------------------|-----------------------------|
+|1|`addEventListener()`           |Attaches an event handler to an element      |
+|2          |`classList`            |	Returns the class name(s) of an element         |
+|3     |`click()`|	Simulates a mouse-click on an element|
+|4     |`getAttribute()`|Returns the value of an element's attribute|
+|5     |`previousElementSibling`|  Returns the previous element at the same node tree level|
+|6 |`nextElementSibling`|	Returns the next element at the same node tree level|
