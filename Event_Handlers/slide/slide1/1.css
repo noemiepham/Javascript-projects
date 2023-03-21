@@ -1,13 +1,11 @@
 /*CSS CHO PHAN NOI DUNG SLIDE */
 * { margin: 0; padding: 0; }
 
-html, body {  width: 100%;  height: 100%; overflow-x: hidden; }
-
-.sldewrapper { position: relative; height: 100%; width: 100ù; }
-
+.slidewrapper {position: relative; height: 100%; width: 100%; overflow: hidden;}
 .cacslide { width: 100%; height: 100%; position: absolute;}
-
-.cacslide ul { width: 100%; height: 100%; position: relative;}
+.motslide {width: 100%;  height: 100%; }
+.cacslide ul {height: 100%; position: relative;}
+html, body {  width: 100%;  height: 100%;  overflow-x: hidden;}
 
 .cacslide ul li {
     list-style: none;
@@ -18,7 +16,13 @@ html, body {  width: 100%;  height: 100%; overflow-x: hidden; }
     opacity: 0;
 }
 .cacslide ul li.active { opacity: 1;}
+.cacslide ul li .motslide {position: relative;}
 
+.motslide .anh {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
 .motslide .nauduoi1,
 .motslide .nauduoi2,
 .motslide .nautren,
@@ -28,30 +32,50 @@ html, body {  width: 100%;  height: 100%; overflow-x: hidden; }
     top: 0px;
     opacity: 0;
 }
-
-.motslide {width: 100%;  height: 100%;}
-
-.cacslide ul li .motslide {position: relative;}
-
-.motslide .anh {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-}
-
 .motslide .nauduoi1 {
-    opacity: 0.5;
-    top: -60%;
-    z-index: 1;
+    opacity: 0;
+    top: -80%;
 }
 
 .motslide .nauduoi2 {
-    opacity: 0.4;
-    top: -30%;
-    z-index: 2;
+    opacity: 0;
+    top: -40%;
+}
+ul li.active .motslide .nauduoi1, 
+ul li.active .motslide .nauduoi2 {
+    animation: nauvao 1s forwards;
+}
+@-webkit-keyframes nauvao {
+    from {
+        transform: translateX(-100%) translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0) translateY(0);
+        opacity: 0.4;
+    }
+}
+ul li.active .motslide .nauduoi2 {
+    animation-delay: 0.3s;
 }
 
-.motslide .nautren { opacity: 0.4;right: 0;}
+.motslide .nautren { opacity: 0; right: 0;}
+ul li.active .motslide .nautren {
+    animation: nautrenvao 1s forwards;
+    animation-delay: 0.3s;
+}
+@-webkit-keyframes nautrenvao {
+    from {
+        transform: translateX(100%) translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%) translateY(0%);
+        opacity: 0.4;
+    }
+}
+
+
 
 .motslide .textnoidung {
     width: 16%;
@@ -60,6 +84,7 @@ html, body {  width: 100%;  height: 100%; overflow-x: hidden; }
     opacity: 1;
     top: 40%;
     color: white;
+    
 }
 
 .textnoidung  h2{
@@ -67,6 +92,7 @@ html, body {  width: 100%;  height: 100%; overflow-x: hidden; }
     font-weight: normal;
     font-family: segoe ui light;
 }
+
 .textnoidung small{
     font-size: 33px;
     font-weight: bold;
@@ -83,10 +109,8 @@ html, body {  width: 100%;  height: 100%; overflow-x: hidden; }
 .textnoidung p{
     font-size: 14px;
     line-height: 20px;
-    color: #dfdfdf;
 }
 .textnoidung .nut{
-    color: white;
     text-decoration: none;
     border: 1px solid white;
     padding: 8px 35px;
@@ -95,7 +119,29 @@ html, body {  width: 100%;  height: 100%; overflow-x: hidden; }
     font-size: 14px;
     text-transform: uppercase;
 }
-
+.cacslide ul li.active .textnoidung h2,
+.cacslide ul li.active .textnoidung small,
+.cacslide ul li.active .textnoidung .ke,
+.cacslide ul li.active .textnoidung p,
+.cacslide ul li.active .textnoidung .nut {
+  animation: textvao 1s forwards;
+}
+@-webkit-keyframes textvao {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 0.4;
+    }
+}
+/* delay */
+.cacslide ul li.active .textnoidung h2 {animation-delay: 1s;}
+.cacslide ul li.active .textnoidung small  {animation-delay: 1.2s;}
+.cacslide ul li.active .textnoidung .ke  {animation-delay: 1.4s;}
+.cacslide ul li.active .textnoidung p  {animation-delay: 1.6s;}
+.cacslide ul li.active .textnoidung .nut  {animation-delay: 1.8s;}
 
 
 /* chuyen slide */
