@@ -1,0 +1,99 @@
+*{margin: 0; padding:0;}
+
+.ngaythang {
+    color: #b8b8b8;
+}
+
+.atrai img {
+    width: 70px;
+    border-radius: 50%;
+}
+
+.aphai {
+    float: left;
+    padding-top: 10px;
+    font-family: segoe ui;
+    color: gray;
+    font-size: 13px;
+}
+
+.aphai b {
+    color: #4167b2;
+    font-family: segoe ui;
+    font-size: 15px;
+}
+
+.atrai {
+    float: left;
+    width: 11%;
+    margin-left: 2%;
+}
+
+body,html {
+    height: 100%;
+}
+
+._3anhduoi {}
+
+._3anhduoi img {
+    width: 33%;
+}
+
+.menutren {
+    position: fixed;
+    top: 0px;
+    text-align: center;
+    width: 100%;
+    background: #4167b2;
+}
+.noidungchinh {
+    margin-top: 67px;
+    height: 100%;
+    width: 100%;
+}
+.noidungchinh .trai {
+    float: left;
+    width: 15%;
+    height: 100%;
+}
+
+.trai img {
+    position: fixed;
+    left: 0;
+    max-width: 181px;
+}
+.noidungchinh .giua{
+    float: left;
+    width: 42%;
+}
+.noidungchinh .phai {
+    float: left;
+    width: 35%;
+    position: relative;
+    overflow: hidden;
+}
+
+.phai img {
+    position: fixed;
+    right: 0px;
+    max-width: 499px;
+}
+
+
+.motkhoi {
+    width: 100%;
+    margin: 19px 4px;
+    border: 1px solid #c7c7c7;
+}
+.motkhoi .avatar {
+    height: 70px;
+    /* background: green; */
+    padding-top: 10px;
+    padding-bottom: 13px;
+}
+.motkhoi .cacAnh {}
+.cacAnh  img.motanhtren{
+    width: 100%;
+}
+.cacAnh  div._3anhduoi{}
+ 

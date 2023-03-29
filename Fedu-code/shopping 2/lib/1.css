@@ -1,0 +1,103 @@
+*{margin:0; padding: 0 ;}
+
+.card._1spkhac {
+    height: 419px;
+    margin-bottom: 24px;
+}
+
+._1spkhac img.img-fluid {
+    width: 206px;
+    height: auto;
+    max-width: 1000px;
+}
+
+._1spkhac b {
+    font-size: 16px;
+    display: block;
+    padding: 11px 0;
+    font-weight: bold;
+    color: #323232;
+}
+
+.dathang {
+    margin-top: 21px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 16px;
+}
+
+.gom {
+    color: gray;
+    font-size: 12px;
+}
+
+.doto {
+    font-size: 27px;
+    color: #d9534f;
+}
+
+.phai.float-right {
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: right;
+}
+
+.dongtinhgia {
+    padding: 10px 0 20px 0;
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 17px;
+}
+
+.capnhatsp {
+    font-size: 12px;
+}
+
+input.soluongsp {
+    width: 121%;
+    padding: 0px 0 0px 8px;
+    line-height: 30px;
+}
+
+.gia1 {
+    font-size: 19px;
+    font-weight: bold;
+    color: #414141;
+}
+
+a.tieude {
+    color: #414141;
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    display: block;
+}
+
+a.tieude:hover {
+    color: #189eff;
+}
+
+h3.tdto {
+    padding: 17px 0px;
+}
+
+body {
+    font-family: segoe ui light;
+    font-size: 13px;
+    background: #f3f3f3;
+}
+
+.xoasp,.capnhatsp {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.menutren {
+    min-height: 200px;
+    background:url(../images/menu.png) no-repeat center;
+    background-size: cover;
+}
+
+.nutmuangay {cursor: pointer;}

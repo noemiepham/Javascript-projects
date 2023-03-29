@@ -1,0 +1,231 @@
+*{margin: 0; padding:0;}
+
+b.ntrai,b.nphai {
+    background-image: url(images/13.png);
+    background-size: 49px 322px;
+    width: 48px;
+    height: 48px;
+    background-position: 0 -46px;
+    /* float: right; */
+    margin: 20px 20px 0 0;
+    cursor: pointer;
+    opacity: 0.6;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-indent: -9999px;
+    cursor: pointer;
+    left: 0%;
+    z-index: 7;
+}
+
+b.nphai {
+    left: 88%;
+    background-position: 0 0;
+}
+
+.khoiCacAnh ul li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    top: 0px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.khoiCacAnh ul li.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.khoiCacAnh ul {
+    width: 100%;
+}
+
+.khoiCacAnh {
+    width: 100%;
+    height: 100%;
+}
+
+.khoiCacAnh ul li img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.ttphai {
+    float: left;
+    width: 35%;
+    background: url(images/v964.png) no-repeat;
+    height: 100%;
+    background-size: cover;
+}
+
+.tttrai {
+    float: left;
+    width: 65%;
+    height: 100%;
+    background: #232323;
+    position: relative;
+}
+
+.thongtinanh {
+    position: fixed;
+    width: 70%;
+    height: 90%;
+    background: black;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+}
+
+.ngaythang {
+    color: #b8b8b8;
+}
+
+.atrai img {
+    width: 70px;
+    border-radius: 50%;
+}
+
+.aphai {
+    float: left;
+    padding-top: 10px;
+    font-family: segoe ui;
+    color: gray;
+    font-size: 13px;
+    width: 79%;
+}
+
+.aphai b {
+    color: #4167b2;
+    font-family: segoe ui;
+    font-size: 15px;
+}
+
+.atrai {
+    float: left;
+    width: 15%;
+    margin-left: 2%;
+}
+
+body,html {
+    height: 100%;
+}
+
+ 
+
+.cacAnh img {
+    width: 33%;
+    float: left;
+    margin-right: 0.3%;
+    cursor: pointer;
+}
+.cacAnh img.motanhtren {
+    
+}
+.menutren {
+    position: fixed;
+    top: 0px;
+    text-align: center;
+    width: 100%;
+    background: #4167b2;
+}
+.noidungchinh {
+    margin-top: 67px;
+    height: 100%;
+    width: 100%;
+}
+.noidungchinh .trai {
+    float: left;
+    width: 15%;
+    height: 100%;
+}
+
+.trai img {
+    position: fixed;
+    left: 0;
+    max-width: 181px;
+}
+.noidungchinh .giua{
+    float: left;
+    width: 42%;
+}
+.noidungchinh .phai {
+    float: left;
+    width: 35%;
+    position: relative;
+    overflow: hidden;
+}
+
+.phai img {
+    position: fixed;
+    right: 0px;
+    max-width: 599px;
+}
+
+
+.motkhoi {
+    width: 100%;
+    margin: 19px 4px;
+    border: 1px solid #c7c7c7;
+}
+.motkhoi .avatar {
+    height: 70px;
+    /* background: green; */
+    padding-top: 10px;
+    padding-bottom: 13px;
+}
+.motkhoi .cacAnh {}
+.cacAnh  img.motanhtren{
+    width: 100%;
+    cursor: pointer;
+}
+.cacAnh  div._3anhduoi{}
+ .popup{}
+ .popup .nenden {
+    transition: 0.2s;
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+
+    opacity:0;
+    visibility: hidden;
+ }
+
+
+
+ .dongLai {
+    background-image: url(images/12.png);
+    background-size: 501px 169px;
+    width: 16px;
+    height: 16px;
+    background-position: -73px -123px;
+    float: right;
+    margin: 20px 20px 0 0;
+    cursor: pointer;
+    opacity: 0.6;
+ }
+
+.dongLai:hover {
+    opacity: 1;
+}
+
+.ra {
+    opacity:1 !important; 
+    visibility: visible !important;
+ }

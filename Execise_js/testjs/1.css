@@ -1,0 +1,236 @@
+* {
+     margin: 0;
+     padding: 0;
+}
+
+html, body {
+     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-size: 16px;
+     line-height: 1.5;
+     color: #545454;
+
+
+     width: 100%;
+     height: 100%;
+}
+header {
+     width: 100%;
+     height: 100%;
+     position: relative;
+
+}
+
+/* nav bar */
+.slidewrapper {
+     width: 100%;
+     height: 100%;
+
+     position: relative;
+}
+
+.slidewrapper nav {
+     width: 100%;
+     height: 100%;
+     z-index: 10;
+     
+     position: absolute;
+     top: 0;
+     left: 0;
+
+}
+.slidewrapper .logoDuaHau {
+     display: flex;
+     text-align: center;
+     justify-content: space-around;
+     align-items: center;
+
+     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+     background-color: #fdfdfb;
+     padding: 10px 0 10px 0;
+}
+/* nav bar before scroll */
+.slidewrapper .wpb_wrapper {
+     background-color: #02020270;
+     height: 40px;
+     font-size: 12px;
+     width: 100%;
+}
+
+
+/* nav bar fixed after scroll */
+.slidewrapper .pst-fix {
+     background-color: #020202;
+     position: fixed;
+     top: 0;
+     left: 0;
+
+}
+
+
+
+
+/* background header */
+.slidewrapper .allSlide {
+     width: 100%;
+     height: 100%;
+
+
+     position: absolute;
+}
+
+.slidewrapper .allSlide ul {
+     width: 100%;
+     height: 100%;
+     position: relative;
+
+
+     padding-left: 0;
+}
+
+.allSlide ul li {
+     position: absolute;
+
+     list-style: none; 
+     width: 100%;
+     height: 100%;
+}
+
+/* .slidewrapper .allSlide ul li */ 
+.allSlide ul li .oneSlide {
+     position: relative;
+     width: 100%;
+     height: 100%;
+}
+
+.oneSlide .photoHcqh {
+     background-size: cover;
+     width: 100%;
+     height: 100%;
+
+     position: absolute;
+
+}
+/* 
+.oneSlide .nauduoi1,
+.oneSlide .nauduoi2,
+.oneSlide .nautren {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    opacity: 0;
+} */
+
+
+
+.slidewrapper .changeSlide {
+     position: absolute;
+
+     transform: translateX(-50%);
+
+     z-index: 9;
+
+     bottom: 0;
+     left: 50%;
+
+
+     
+     
+}
+.slidewrapper .changeSlide ul {
+     display: flex;
+     list-style: none;
+     text-indent: 9999px;
+
+     cursor: pointer;
+
+}
+
+.slidewrapper .changeSlide ul li {  
+     display: inline-block;
+     border: 1px solid gray;
+     text-indent: -9999px;
+     width: 20px;
+     height: 20px;
+     border-radius: 50%;
+     margin: 20px 12px;
+     transition: 0.4s;
+     cursor: pointer;
+
+}
+
+.changeSlide ul li:active,
+.changeSlide ul li:hover {
+     background-color: #020202;
+}
+
+
+.logo2, .logo3 {
+     height: 30px;
+     width: 30px;
+     background-color: #bbb;
+     border-radius: 50%;
+     display: inline-block;
+}
+.facebook, .donate {
+     width: 20px;
+     height: 20px;
+
+}
+
+:root {
+     --wp--preset--font-size--small: 13px;
+    --wp--preset--font-size--medium: 20px;
+    --wp--preset--font-size--large: 36px;
+    --wp--preset--font-size--x-large: 42px;
+
+    --wp-gdpr--bar--background-color: #000;
+    --wp-gdpr--bar--color: #fff;
+    --wp-gdpr--button--background-color: #000;
+    --wp-gdpr--button--background-color--darken: #000;
+    --wp-gdpr--button--color: #fff;
+    --trx-demo-button-bg-color: #f30606;
+    --trx-demo-button-text-hover: #fff;
+    --trx-demo-button-bg-hover: #f80505;
+
+
+}
+
+div.logoDuaHau p {
+     /* font-size: 16px; */
+     font-weight: bold;
+     line-height: 1.5;
+     margin-bottom: 0 !important;
+   
+
+}
+
+
+
+
+.wpb_wrapper .layout_item {
+     height: 100%;
+}
+.wpb_wrapper .layout-item ul {
+     text-decoration: none;
+     font-weight: 400;
+}
+.justify-content-center {
+     height: 100%;
+     align-items: center;
+}
+.nav {
+     --bs-nav-link-color: white;
+     --bs-nav-link-hover-color: var(--trx-demo-button-bg-hover);
+     text-transform: uppercase;
+     text-decoration: none;
+     font-weight: 400;
+}
+
+li.nav-item {
+     margin-left: 1rem;
+     margin-right: 1rem;
+     font-family: 'Poppins', sans-serif;
+     font-weight: 500;
+     font-style: normal;
+     font-size: 1em;
+}

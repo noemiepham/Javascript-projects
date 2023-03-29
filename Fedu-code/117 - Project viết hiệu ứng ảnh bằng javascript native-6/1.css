@@ -1,0 +1,141 @@
+*{margin: 0; padding:0;}
+
+.ngaythang {
+    color: #b8b8b8;
+}
+
+.atrai img {
+    width: 70px;
+    border-radius: 50%;
+}
+
+.aphai {
+    float: left;
+    padding-top: 10px;
+    font-family: segoe ui;
+    color: gray;
+    font-size: 13px;
+    width: 79%;
+}
+
+.aphai b {
+    color: #4167b2;
+    font-family: segoe ui;
+    font-size: 15px;
+}
+
+.atrai {
+    float: left;
+    width: 15%;
+    margin-left: 2%;
+}
+
+body,html {
+    height: 100%;
+}
+
+._3anhduoi {
+    width: 100%;
+    overflow: hidden;
+    padding: 1px 0;
+}
+
+._3anhduoi img {
+    width: 33%;
+    float: left;
+    margin-right: 0.3%;
+    cursor: pointer;
+}
+
+.menutren {
+    position: fixed;
+    top: 0px;
+    text-align: center;
+    width: 100%;
+    background: #4167b2;
+}
+.noidungchinh {
+    margin-top: 67px;
+    height: 100%;
+    width: 100%;
+}
+.noidungchinh .trai {
+    float: left;
+    width: 15%;
+    height: 100%;
+}
+
+.trai img {
+    position: fixed;
+    left: 0;
+    max-width: 181px;
+}
+.noidungchinh .giua{
+    float: left;
+    width: 42%;
+}
+.noidungchinh .phai {
+    float: left;
+    width: 35%;
+    position: relative;
+    overflow: hidden;
+}
+
+.phai img {
+    position: fixed;
+    right: 0px;
+    max-width: 599px;
+}
+
+
+.motkhoi {
+    width: 100%;
+    margin: 19px 4px;
+    border: 1px solid #c7c7c7;
+}
+.motkhoi .avatar {
+    height: 70px;
+    /* background: green; */
+    padding-top: 10px;
+    padding-bottom: 13px;
+}
+.motkhoi .cacAnh {}
+.cacAnh  img.motanhtren{
+    width: 100%;
+    cursor: pointer;
+}
+.cacAnh  div._3anhduoi{}
+ .popup{}
+ .popup .nenden {
+    transition: 0.4s;
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+
+    opacity:0;
+    visibility: hidden;
+ }
+
+ .popup  .nenden.ra {
+    opacity:1; visibility: visible;
+ }
+
+ .dongLai {
+    background-image: url(images/12.png);
+    background-size: 501px 169px;
+    width: 16px;
+    height: 16px;
+    background-position: -73px -123px;
+    float: right;
+    margin: 20px 20px 0 0;
+    cursor: pointer;
+    opacity: 0.6;
+ }
+
+.dongLai:hover {
+    opacity: 1;
+}
