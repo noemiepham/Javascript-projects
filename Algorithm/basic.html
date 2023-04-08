@@ -18,6 +18,7 @@
     <!-- place navbar here -->
   </header>
   <main>
+
      <div class="container border border-danger mb-5 ">
           <div class="row">
                <div class="chectNum">
@@ -27,9 +28,9 @@
                     <p id="demo1"></p>
                     
                
-                    <input class="btn btn-primary" type="textbox" id="num1" value="1" ></input>
+                    <input class="btn btn-primary" type="textbox" id="num1" value=""></input>
                     <p class="btn btn-light" type="button">+</p>
-                    <input class="btn btn-primary" type="textbox" id="num2" value="2"></input>
+                    <input class="btn btn-primary" type="textbox" id="num2" value=""></input>
                     <p class="btn btn-light" type="button">=</p>
                     <button class="btn btn-primary" type="button" id="result">Text</button>
           
@@ -88,13 +89,43 @@
                </li>
            </ul>
      </div>
-     <div class="container">
+     <div class="container border border-danger">
           <div class="row">
+               <div class="col-sm-4" >find number in array</div>
                <div class="col-sm-4" id="bigNumber"></div>
-               <div class="col-sm-4"></div>
+               <button class="btn btn-primary" type="button" onclick="run()">Text</button>
                <div class="col-sm-4"></div>
           </div>
      </div>
+     <style type="text/css">
+          #dropdown {
+              width: 200px;
+              margin-top: 50px;
+          }
+          #dropdown li{
+              list-style:none;
+              line-height: 30px;
+              background: blue;
+              margin: 2px;
+          }
+
+          #dropdown li a{
+              margin-left: 10px;
+              color: #FFF;
+              text-decoration: none;
+          }
+
+          #dropdown ul{
+              display:none;
+              padding: 0px;
+              background: pink
+          }
+
+          #dropdown ul li{
+              background-color: pink
+          }
+
+      </style>
   </main>
   <footer>
     <!-- place footer here -->
@@ -111,6 +142,7 @@
   <script src="array.js"></script>
   <script src="checkEmail.js"></script>
   <script src="dropdown.js"></script>
+  <script src="findBigNumber.js"></script>
 </body>
 
 </html>

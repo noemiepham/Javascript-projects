@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <title>Title</title>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <!-- Bootstrap CSS v5.2.1 -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+     <header>
+          <!-- place navbar here -->
+     </header>
+     <main>
+
+          <div class="container border border-danger m-5 p-5">
+               <div class="row">
+                    <p class="content" id="content" style="background: navy;">Lorem ipsum dolor sit amet, consectetur
+                         adipisicing elit. Ex sed qui excepturi illo corrupti. Unde officiis repellendus eos obcaecati,
+                         rerum provident quibusdam, laborum, vitae ad similique dolorem nam aspernatur veniam?</p>
+               </div>
+               <div class="logo">
+                    <img src="bg2.jpg" style="width: 300px;" alt="" id="logo">
+               </div>
+               <div class="row">
+                    <div class="col-sm-5">
+                         <button class="btn btn-primary" type="button" onclick="hello()">Click Here</button>
+                    </div>
+               </div>
+          </div>
+          <div class="container border border-danger m-5 p-5">
+               <div class="row">
+                    <h1>Tinh tong hai so</h1>
+                    <div class="col-sm-4">
+                         <input type="text" id="num1" name="domain" value="" />
+                    </div>
+                    <p>+</p>
+                    <div class="col-sm-4">
+                         <input type="text" id="num2" name="domain" value="" />
+                    </div>
+                    <p>=</p>
+                    <div class="col-sm-4">
+                         <input type="button" id="total" value="">
+                    </div>
+                    <div class="col-sm-4">
+                         <button id="sum" onclick="setDomain()">Total</button>
+                    </div>
+               </div>
+          </div>
+          <div class="container border border-danger m-5 p-5">
+               <div class="row">
+                    <h1>Tang giam </h1>
+                    <div class="col-sm-4"><button class="btn btn-primary" type="button" onclick="tang()">+</button>
+                    </div>
+                    <div class="col-sm-4"><input type="button" style="width: 100px;" id="num" value=""></div>
+                    <div class="col-sm-4"><button class="btn btn-primary" type="button" onclick="giam()">-</button>
+                    </div>
+
+               </div>
+          </div>
+
+     </main>
+     <footer>
+          <!-- place footer here -->
+     </footer>
+     <!-- Bootstrap JavaScript Libraries -->
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+          integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+          </script>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+          integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+          </script>
+     <script>
+
+
+          function setDomain() {
+               let num1 = document.getElementById('num1').value;
+               let num2 = document.getElementById('num2').value;
+               let total = parseInt(num1) + parseInt(num2);
+               document.getElementById('total').value = total;
+          }
+
+          let i = 0;
+          function tang() {
+               //console.log('click tang');
+               i++;
+
+               document.getElementById('num').value = i;
+
+          }
+          //setAttribute
+          function giam() {
+               // console.log('click giam');
+               i--;
+               document.getElementById('num').setAttribute('value', i);
+          }
+          let l = 0;
+          let hello = () => {
+               let text = 'my name is Noemie';
+               let texte = 'my name is red';
+               let image = document.getElementById('logo');
+
+               let a = document.getElementById('content');
+               let b = a.innerHTML;
+
+               if (b != text) {
+                    a.innerHTML = text;
+                    content.style.background = 'red'
+                    image.src = 'bg3.jpg';
+               } else {
+                    a.innerHTML = texte;
+                    content.style.background = 'grey'
+                    image.src = 'bg2.jpg';
+               }
+               l++;
+               // console.log(l);
+          }
+
+     </script>
+</body>
+
+</html>

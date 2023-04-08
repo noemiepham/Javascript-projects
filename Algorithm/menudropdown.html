@@ -1,36 +1,38 @@
 <html>
-    <head>
-        <style type="text/css">
-            #dropdown {
-                width: 200px
-            }
-            #dropdown li{
-                list-style:none;
-                line-height: 30px;
-                background: blue;
-                margin: 2px;
-            }
- 
-            #dropdown li a{
-                margin-left: 10px;
-                color: #FFF;
-                text-decoration: none;
-            }
- 
-            #dropdown ul{
-                display:none;
-                padding: 0px;
-                background: pink
-            }
- 
-            #dropdown ul li{
-                background-color: pink
-            }
- 
-        </style>
-    </head>
- 
-    <body>
+
+<head>
+    <style type="text/css">
+        #dropdown {
+            width: 200px
+        }
+
+        #dropdown li {
+            list-style: none;
+            line-height: 30px;
+            background: blue;
+            margin: 2px;
+        }
+
+        #dropdown li a {
+            margin-left: 10px;
+            color: #FFF;
+            text-decoration: none;
+        }
+
+        #dropdown ul {
+            display: none;
+            padding: 0px;
+            background: pink
+        }
+
+        #dropdown ul li {
+            background-color: pink
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
         <ul id="dropdown">
             <li><a href="#">Trang chủ</a></li>
             <li>
@@ -58,6 +60,27 @@
                 </ul>
             </li>
         </ul>
-        <script src="dropdown.js"></script>
-    </body>
+    </div>
+    <script>
+
+        var menu = document.querySelectorAll('#dropdown > li');
+        // console.log(menu);
+
+        for (var i = 0; i < menu.length; i++) {
+            // console.log('hello');
+
+            menu[i].addEventListener("click", function () {
+                var menuList = document.querySelectorAll('#dropdown > li > ul');
+                //console.log(menuList);
+                for (let k = 0; k < menuList.length; k++) {
+                    menuList[k].style.display = 'none';
+
+                }
+                this.children[1].style.display = "block";
+            });
+        }
+
+    </script>
+</body>
+
 </html>

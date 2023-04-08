@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <title>check box</title>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <!-- Bootstrap CSS v5.2.1 -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+     <header>
+          <!-- place navbar here -->
+     </header>
+     <main>
+          <div class="form-check">
+               <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" name="" id="checkbox" value="checkedValue" checked>
+                    Display value
+               </label>
+               <button type="button" name="" id="del" class="btn btn-primary btn-lg btn-block" onclick="del()"> Delete
+               </button>
+               <button type="button" name="" id="check" class="btn btn-primary btn-lg btn-block" onclick="check()">
+                    Check </button>
+          </div>
+
+
+          <h2>Lấy giá trị của checkbox bằng Javascript</h2>
+          <p>Hãy viết chương trình khi click vào button thì in ra danh sách sở thích mà người dùng đã chọn.</p>
+
+          <input class="checkbox" type="checkbox" name="hobby" value="Đi chơi" /> <label>Đi chơi</label> <br />
+          <input class="checkbox" type="checkbox" name="hobby" value="Đi du lịch" /> <label>Đi du lịch</label> <br />
+          <input class="checkbox" type="checkbox" name="hobby" value="Đi ăn" /> <label>Đi ăn</label> <br />
+          <input class="checkbox" type="checkbox" name="hobby" value="Đi siêu thị" /> <label>Đi siêu thị</label> <br />
+          <input class="checkbox" type="checkbox" name="hobby" value="học lập trình" /> <label>học lập trình</label>
+          <br />
+          <input class="checkbox" type="checkbox" name="hobby" value="Lướt freetuts.net" /> <label>Lướt
+               freetuts.net</label>
+          <br /> <br />
+
+          <input type="button" id="btn" value="Xem kết quả" />
+          <input type="button" id="checkALL" value="Check all" />
+          <input type="button" id="delAll" value="Delete all" />
+
+
+          <div id="ketqua">
+               <table class="table">
+                    <thead>
+                         <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">First</th>
+                              <th scope="col">Last</th>
+                              <th scope="col">Handle</th>
+                         </tr>
+                    </thead>
+                    <tbody id="tbody">
+                         <tr id="active">
+                              <th scope="row">${k}</th>
+                              <td>${checkbox[k].value}</td>
+                         </tr>
+                    </tbody>
+               </table>
+
+          </div>
+          <br>
+
+
+     </main>
+     <footer>
+          <!-- place footer here -->
+     </footer>
+     <script>
+          function del() {
+               document.getElementById('checkbox').checked = true;
+          }
+          function check() {
+               document.getElementById('checkbox').checked = false;
+          }
+
+          let checkAll = document.getElementById('checkALL');
+          let delAll = document.getElementById('delAll');
+          //console.log(checkAll);
+          let checkbox = document.getElementsByClassName('checkbox');
+          let btn = document.getElementById('btn');
+          //console.log(tbody);
+          let k = 0;
+          let o = 0;
+          let a = 0;
+
+
+
+          let result = "";
+          //console.log(checkbox.length);
+          //console.log(checkbox[0]);
+          checkAll.onclick = function () {
+               //console.log('check');
+               for (a = 0; a < checkbox.length; a++) {
+                    if (this.checked = true) {
+                         let tbody = document.getElementById('active');
+                         result += `<tr class = "del">
+                                   <th scope="row">${a}</th>
+                                   <td>${checkbox[a].value}</td>
+                                        </tr>`
+                    }
+                    checkbox[a].checked = true;
+               }
+               tbody.innerHTML = result;
+          }
+          delAll.onclick = function () {
+               //console.log('check');
+               for (let a = 0; a < checkbox.length; a++) {
+                    checkbox[a].checked = false;
+                    document.getElementById('tbody').style.display = 'none';
+               }
+          }
+
+          for (k = 0; k < checkbox.length; k++) {
+
+               let tbody = document.getElementById('active');
+               //console.log(tbody);
+               // console.log(checkbox[k].value);
+               checkbox[k].addEventListener('click', function () {
+
+                    let td = `<tr>
+                   <th scope="row">${o}</th>
+                   <td>${this.value}</td>
+                     </tr>`
+
+                    // document.getElementById('ketqua').innerHTML = checkbox[k].value;
+                    if (this.checked) {
+                         o++;
+                         tbody.insertAdjacentHTML('beforebegin', td);
+                         btn.onclick = function () {
+                              //console.log(o);
+                              // tbody.insertAdjacentHTML('beforebegin', td);
+                              document.getElementById('active').style.display = 'none';
+                         }
+                    } else if (this.checked == false) {
+                    }
+
+               })
+          }
+
+     </script>
+     <!-- Bootstrap JavaScript Libraries -->
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+          integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+          </script>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+          integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+          </script>
+</body>
+
+</html>
